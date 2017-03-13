@@ -2,7 +2,7 @@
 
 # code files
 [*.cs]
-indent_size = 2
+indent_size = 4
 
 csharp_style_var_for_built_in_types = false:suggestion
 csharp_style_var_when_type_is_apparent = false:suggestion

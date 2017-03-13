@@ -31,7 +31,6 @@ namespace calculator.test
             Assert.Throws<ArgumentNullException>(
                 ()=> MyRecord.Workouts.Add(
                     new Workout(new DateTime(2017, 3, 8), new TimeSpan(0, 30, 30), 120, null)));
-          //  var result = MyRecord.DisplayTodayWorkout();
         }
 
         [Test]
@@ -46,6 +45,14 @@ namespace calculator.test
         {
             MyRecord.Workouts.Add(new DistanceWorkout(23, new DateTime(2017, 3, 8), new TimeSpan(1, 2, 2), 110, "biking"));
             var result = MyRecord.DisplayTodayWorkout();
+        }
+
+        [Test]
+        public void DispalyWrokOut_Should_Display_CorrectWorkout()
+        {
+            var result = MyRecord.DisplayWorkout(new DateTime(2017, 3,6));
+            Assert.AreEqual("not bad workout", result);
+
         }
     }
 }

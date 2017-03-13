@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator
 {
-        public class Program
+  public class Program
         {
                 public static void Main(string[] args)
                 {
@@ -19,9 +16,9 @@ namespace calculator
                         Workouts.Add(new Workout(new DateTime(2017, 3, 6), new TimeSpan(1, 1, 1), 89, "YEAH, day 1"));
                         Workouts.Add(new Workout(new DateTime(2017, 3, 7), new TimeSpan(1, 2, 1), 89, "good workout for day 2"));
                         Workouts.Add(new DistanceWorkout(2, new DateTime(2017, 3, 8), new TimeSpan(2, 1, 1), 89, "good workout for day 3"));
-                        Workouts.Add(new Workout(new DateTime(2017, 3, 8), new TimeSpan(0, 30, 30), 120, null));
+                        Workouts.Add(new Workout(new DateTime(2017, 3, 8), new TimeSpan(0, 30, 30), 120, ""));
 
-                        var myworkoutRecord = new MyWorkouts()
+      MyWorkouts myworkoutRecord = new MyWorkouts()
                         {
                                 Workouts = Workouts
                         };
